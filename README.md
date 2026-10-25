@@ -25,7 +25,13 @@ Not yet verified on a real Vercel deployment.
 bcrypt hashing (bcryptjs), HttpOnly + SameSite=Strict + Secure(prod) cookie, parameterized queries, role never accepted from registration, atomic conditional UPDATE prevents overselling. SameSite=Strict is the CSRF defence; add rate limiting before real use.
 
 ## Known limitations
-Frontend (React/Vite/Tailwind) not built yet. No login rate limiting. Purchases only decrement stock (no orders table).
+No login rate limiting. Purchases only decrement stock (no orders table).
 
 ## My AI Usage
 _Template – edit honestly._ Tools used: [e.g. Claude]. Tasks: [..]. What I reviewed/changed: [..]. What I verified myself: [..].
+
+## Frontend
+    cd frontend && npm install
+    npm run dev      # http://localhost:5173 (proxies /api to :3001; run the API too)
+    npm test         # frontend tests
+    npm run build
