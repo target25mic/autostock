@@ -1,6 +1,10 @@
-# AutoStock – Car Dealership Inventory API
-Vercel deployment-autostock-2.vercel.app
-Express + libSQL (SQLite locally, Turso in production) with JWT auth in HttpOnly cookies. Deployable to Vercel via `api/index.js`.
+# AutoStock – Car Dealership Inventory System
+
+**Live demo:** https://autostock-2.vercel.app
+
+React (Vite + Tailwind) frontend and an Express API using libSQL (SQLite locally, Turso in production), with JWT auth in HttpOnly cookies. Deployed on Vercel, with the API served through `api/index.js`.
+
+
 
 ## Setup
     npm install
