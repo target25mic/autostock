@@ -1,5 +1,5 @@
 # AutoStock – Car Dealership Inventory API
-
+Vercel deployment-autostock-2.vercel.app
 Express + libSQL (SQLite locally, Turso in production) with JWT auth in HttpOnly cookies. Deployable to Vercel via `api/index.js`.
 
 ## Setup
@@ -28,7 +28,28 @@ bcrypt hashing (bcryptjs), HttpOnly + SameSite=Strict + Secure(prod) cookie, par
 No login rate limiting. Purchases only decrement stock (no orders table).
 
 ## My AI Usage
-_Template – edit honestly._ Tools used: [e.g. Claude]. Tasks: [..]. What I reviewed/changed: [..]. What I verified myself: [..].
+
+
+**Tool used:** Claude (Anthropic), through the Claude chat interface.
+
+**What Claude did:**
+- Wrote the Express backend (authentication, vehicle CRUD, search, purchase and restock endpoints) using libSQL, so it runs on SQLite locally and Turso in production.
+- Wrote the backend tests first and ran them to see them fail, then wrote the code to pass them (17 tests). It also wrote the React frontend with Tailwind (10 tests), the database scripts, `vercel.json`, and the first drafts of this README and PROMPTS.md.
+- Ran the tests and production build in its own sandbox and reported the results. It did not deploy anything, and it did not test the app in a browser.
+- Gave me step-by-step instructions for setup, Git, Turso and Vercel, and helped me debug errors I pasted in (PowerShell syntax, a Git push rejection, a merge conflict, and a Vercel Root Directory error).
+
+**What I did myself:**
+- Downloaded the project and ran it on my own computer. 
+- Created the GitHub repository, fixed the push and merge conflicts, and pushed the code.
+- Created the Turso database, set the environment variables in Vercel, and deployed the app.
+- Created my own admin account with a script. 
+- Edited this README section myself.
+
+**What I reviewed or changed:** frontend changes mostly
+
+**What I verified myself:** ran the tests locally and saw them pass
+
+**How AI affected my workflow:** It produced the whole first version quickly, which let me spend my time on setup, deployment and understanding how the pieces fit together. 
 
 ## Frontend
     cd frontend && npm install
