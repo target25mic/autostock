@@ -28,4 +28,4 @@ bcrypt hashing (bcryptjs), HttpOnly + SameSite=Strict + Secure(prod) cookie, par
 Frontend (React/Vite/Tailwind) not built yet. No login rate limiting. Purchases only decrement stock (no orders table).
 
 ## My AI Usage
-_Template – edit honestly._ Tools used: [e.g. Claude]. Tasks: [..]. What I reviewed/changed: [..]. What I verified myself: [..].
+
